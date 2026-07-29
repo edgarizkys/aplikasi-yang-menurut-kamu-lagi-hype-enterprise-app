@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Yang Menurut Kamu Lagi Hype Enterprise - Manajemen Proyek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-primary: #3B82F6;
+            --color-secondary: #10B981;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .border-primary { border-color: var(--color-primary); }
+        .hover\:bg-primary-dark:hover { background-color: #2563EB; } /* A slightly darker blue */
+
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+        .hover\:bg-secondary-dark:hover { background-color: #059669; } /* A slightly darker green */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-primary text-white shadow-md">
+            <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold">Aplikasi Hype Enterprise</a>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-white text-primary px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
+                        Masuk
+                    </button>
+                    <button class="bg-secondary text-white px-4 py-2 rounded-md hover:bg-secondary-dark transition-colors duration-200">
+                        Daftar
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="flex flex-1">
+            <!-- Sidebar Navigation -->
+            <aside class="w-64 bg-white shadow-lg p-6 border-r border-gray-200">
+                <nav>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#dashboard" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                Proyek
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tasks" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                Tugas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#users" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.102-1.28-.285-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.102-1.28.285-1.857m0 0a5.002 5.002 0 019.43 0M12 10a6 6 0 100-12 6 6 0 000 12zm-2-6a2 2 0 114 0 2 2 0 01-4 0z"></path></svg>
+                                Pengguna
+                            </a>
+                        </li>
+                        <!-- Add more navigation items for other features -->
+                        <li>
+                            <a href="#gantt" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                Gantt Chart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#kanban" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                                Kanban Board
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#reports" class="flex items-center p-3 text-gray-700 hover:bg-primary hover:text-white rounded-lg transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 2v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Laporan
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Panel -->
+            <main id="app-content" class="flex-1 p-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-6">Selamat Datang di Aplikasi Manajemen Proyek</h1>
+                <p class="text-gray-600">Pilih menu di samping untuk mulai mengelola proyek, tugas, dan tim Anda.</p>
+
+                <!-- Dynamic content will be loaded here by JavaScript -->
+                <div id="content-area" class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold text-gray-700 mb-4">Ringkasan Cepat</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                            <h3 class="text-lg font-medium text-blue-800">Total Proyek</h3>
+                            <p class="text-3xl font-bold text-blue-600">2</p>
+                        </div>
+                        <div class="bg-emerald-50 p-4 rounded-lg shadow-sm border border-emerald-200">
+                            <h3 class="text-lg font-medium text-emerald-800">Tugas Selesai</h3>
+                            <p class="text-3xl font-bold text-emerald-600">1</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg shadow-sm border border-yellow-200">
+                            <h3 class="text-lg font-medium text-yellow-800">Tugas Mendatang</h3>
+                            <p class="text-3xl font-bold text-yellow-600">2</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white p-4 text-center text-sm">
+            <div class="container mx-auto">
+                &copy; 2023 Aplikasi Yang Menurut Kamu Lagi Hype Enterprise. Hak Cipta Dilindungi.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Basic client-side routing (for demonstration)
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.getElementById('content-area');
+
+            const loadContent = (hash) => {
+                let title = '';
+                let content = '';
+
+                switch (hash) {
+                    case '#projects':
+                        title = 'Daftar Proyek';
+                        content = '<p>Ini adalah halaman untuk mengelola proyek.</p>';
+                        // In a real app, fetch data and render a table/list
+                        break;
+                    case '#tasks':
+                        title = 'Daftar Tugas';
+                        content = '<p>Ini adalah halaman untuk mengelola tugas.</p>';
+                        break;
+                    case '#users':
+                        title = 'Daftar Pengguna';
+                        content = '<p>Ini adalah halaman untuk mengelola pengguna.</p>';
+                        break;
